@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(118, 120, 122);
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav{
+    background-color: rgb(128, 23, 128);
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 11px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.gamecontainer{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.box{
+    border: 2px solid white;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(238, 223, 253);
+    cursor: pointer;
+  
+}
+
+.gameInfo{
+    padding: 0px 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+h1{
+    color: aliceblue;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 0 23px;
+    padding: 6px 11px;
+    border-radius: 6px;
+    background-color: thistle;
+    cursor: pointer;
+    
+}
+.info{
+    font-size: 20px;
+}
+@media screen and (max-width: 360px){
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+         font-size: 1.5rem;
+    }
+    .container{
+        grid-template-columns: repeat(3, 20vw);     
+        grid-template-rows: repeat(3, 20vw);
+    }
+}
+    
